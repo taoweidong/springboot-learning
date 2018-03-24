@@ -36,6 +36,13 @@
             <optional>true</optional>
         </dependency>
 
+        <!--自己封装的工具工程-->
+        <dependency>
+            <groupId>com.taowd</groupId>
+            <artifactId>springboot-utils</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
