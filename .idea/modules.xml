@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-FastJson/SpringBoot-FastJson.iml" filepath="$PROJECT_DIR$/SpringBoot-FastJson/SpringBoot-FastJson.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-HelloWorld/SpringBoot-HelloWorld.iml" filepath="$PROJECT_DIR$/SpringBoot-HelloWorld/SpringBoot-HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Utils/SpringBoot-Utils.iml" filepath="$PROJECT_DIR$/SpringBoot-Utils/SpringBoot-Utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoot-FastJson/springboot-fastJson.iml" filepath="$PROJECT_DIR$/SpringBoot-FastJson/springboot-fastJson.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-learning.iml" filepath="$PROJECT_DIR$/springboot-learning.iml" />
     </modules>
   </component>

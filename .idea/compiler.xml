@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-fastJson" />
+        <module name="SpringBoot-FastJson" />
         <module name="SpringBoot-HelloWorld" />
         <module name="SpringBoot-Utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringBoot-FastJson" target="1.8" />
       <module name="springboot-fastJson" target="1.8" />
       <module name="SpringBoot-HelloWorld" target="1.8" />
       <module name="springboot-learning" target="1.8" />
