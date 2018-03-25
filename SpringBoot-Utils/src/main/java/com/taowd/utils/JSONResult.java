@@ -25,10 +25,14 @@ import java.util.List;
  */
 public class JSONResult {
 
-    // 定义jackson对象
+    /**
+     * 定义jackson对象
+     */
     private static final ObjectMapper MAPPER = new ObjectMapper();
 
-    // 响应业务状态
+    /**
+     * 响应业务状态
+     */
     private Integer status;
 
     /**
@@ -36,41 +40,80 @@ public class JSONResult {
      */
     private String msg;
 
-    // 响应中的数据
+    /**
+     * 响应中的数据
+     */
     private Object data;
 
-    private String ok;    // 不使用
+    /**
+     * 不使用
+     */
+    private String ok;
 
     public static JSONResult build(Integer status, String msg, Object data) {
         return new JSONResult(status, msg, data);
     }
 
+    /**
+     * 交易成功 并返回前台数据data
+     *
+     * @param data 返回数据
+     * @return
+     */
     public static JSONResult ok(Object data) {
         return new JSONResult(data);
     }
 
+    /**
+     * 交易成功，无返回数据
+     *
+     * @return
+     */
     public static JSONResult ok() {
         return new JSONResult(null);
     }
 
+    /**
+     * 交易错误  返回错误信息
+     *
+     * @param msg
+     * @return
+     */
     public static JSONResult errorMsg(String msg) {
         return new JSONResult(500, msg, null);
     }
 
+    /**
+     * 交易错误，并返回数据
+     *
+     * @param data
+     * @return
+     */
     public static JSONResult errorMap(Object data) {
         return new JSONResult(501, "error", data);
     }
 
+    /**
+     * 交易错误   拦截器拦截到用户token出错
+     *
+     * @param msg
+     * @return
+     */
     public static JSONResult errorTokenMsg(String msg) {
         return new JSONResult(502, msg, null);
     }
 
+    /**
+     * 交易发生异常  返回异常信息
+     *
+     * @param msg
+     * @return
+     */
     public static JSONResult errorException(String msg) {
         return new JSONResult(555, msg, null);
     }
 
     public JSONResult() {
-
     }
 
 //    public static LeeJSONResult build(Integer status, String msg) {

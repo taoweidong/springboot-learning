@@ -1,6 +1,6 @@
 package com.taowd.pojo;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -31,7 +31,7 @@ public class User {
     /**
      * 出生日期
      */
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:dd", locale = "zh", timezone = "GMT+8")
+    @JSONField(format = "yyyy-MM-dd HH:mm")
     private Date birthday;
 
 

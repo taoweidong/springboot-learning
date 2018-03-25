@@ -9,16 +9,17 @@
     <packaging>pom</packaging>
 
     <name>springboot-learning</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Spring Boot学习项目</description>
 
     <modules>
         <module>SpringBoot-HelloWorld</module>
+        <module>SpringBoot-FastJson</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.0.RELEASE</version>
+        <version>1.5.9.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
