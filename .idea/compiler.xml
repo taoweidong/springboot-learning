@@ -9,7 +9,6 @@
         <module name="springboot-fastJson" />
         <module name="SpringBoot-FastJson" />
         <module name="SpringBoot-HelloWorld" />
-        <module name="SpringBoot-Utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

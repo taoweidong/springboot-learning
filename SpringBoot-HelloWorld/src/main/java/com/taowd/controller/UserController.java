@@ -1,7 +1,7 @@
 package com.taowd.controller;
 
+import com.taowd.pojo.JSONResult;
 import com.taowd.pojo.User;
-import com.taowd.utils.JSONResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
