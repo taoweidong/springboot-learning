@@ -1,5 +1,6 @@
 package com.taowd.controller;
 
+import com.taowd.pojo.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -16,12 +17,18 @@ public class TemplatesController {
 
     @RequestMapping("/index")
     public String hello(Map<String, Object> map) {
-
-//        ModelAndView modelAndView = new ModelAndView("hello");
+        // ModelAndView modelAndView = new ModelAndView("hello");
         // modelAndView.add
         map.put("name", "Andy");
         map.put("hello", "测试一下喽！！！！");
         //return modelAndView;
+        User user = new User();
+        user.setId(90L);
+        user.setName("李三");
+        user.setAge(25);
+
+        map.put("user", user);
+
         return "index";
 
     }
