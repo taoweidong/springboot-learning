@@ -59,6 +59,7 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 # 学习计划
 
 - SpringBoot-HelloWorld：创建项目结构，发布GitHub仓库，创建第一个HelloWorld程序，并封装返回JSON对象的功能
+- SpringBoot-FastJson：通过相关配置将SpringBoot中的JSON的默认解析方式修改为FastJson
 - SpringBoot-thymeleaf: 学习SpringBoot整合Thymleaf技术
 - SpringBoot-Exception: 学习SpringBoot异常处理功能
 - SpringBoot-Mybatis: 学习SpringBoot整合MyBatis
