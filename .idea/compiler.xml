@@ -6,9 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-fastJson" />
         <module name="SpringBoot-FastJson" />
+        <module name="springboot-fastJson" />
         <module name="SpringBoot-HelloWorld" />
+        <module name="SpringBoot-Swagger" />
+        <module name="springboot-swagger" />
+        <module name="SpringBoot-Thymeleaf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +19,9 @@
       <module name="springboot-fastJson" target="1.8" />
       <module name="SpringBoot-HelloWorld" target="1.8" />
       <module name="springboot-learning" target="1.8" />
+      <module name="springboot-swagger" target="1.8" />
+      <module name="SpringBoot-Swagger" target="1.8" />
+      <module name="SpringBoot-Thymeleaf" target="1.8" />
       <module name="SpringBoot-Utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>
