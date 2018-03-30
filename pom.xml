@@ -15,6 +15,7 @@
         <module>SpringBoot-HelloWorld</module>
         <module>SpringBoot-FastJson</module>
         <module>SpringBoot-Thymeleaf</module>
+        <module>springboot-swagger</module>
     </modules>
 
     <parent>
