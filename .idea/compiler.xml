@@ -9,6 +9,7 @@
         <module name="SpringBoot-FastJson" />
         <module name="springboot-fastJson" />
         <module name="SpringBoot-HelloWorld" />
+        <module name="SpringBoot-SpringDataJPA" />
         <module name="SpringBoot-Swagger" />
         <module name="springboot-swagger" />
         <module name="SpringBoot-Thymeleaf" />
@@ -19,6 +20,7 @@
       <module name="springboot-fastJson" target="1.8" />
       <module name="SpringBoot-HelloWorld" target="1.8" />
       <module name="springboot-learning" target="1.8" />
+      <module name="SpringBoot-SpringDataJPA" target="1.8" />
       <module name="springboot-swagger" target="1.8" />
       <module name="SpringBoot-Swagger" target="1.8" />
       <module name="SpringBoot-Thymeleaf" target="1.8" />
