@@ -17,6 +17,8 @@
         <module>SpringBoot-Thymeleaf</module>
         <module>springboot-swagger</module>
         <module>SpringBoot-SpringDataJPA</module>
+        <!--全局异常捕获-->
+        <module>SpringBoot-GlobalDefaultExceptionHandler</module>
     </modules>
 
     <parent>
