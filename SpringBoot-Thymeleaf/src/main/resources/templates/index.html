@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <title>Thymeleaf 学习</title>
@@ -9,14 +9,7 @@
 <h1>hello thymeleaf</h1>
 <br/>
 
-
-Welcome <span th:text="${name}"></span>
-
-<h1 th:inline="text">Hello.v.2</h1>
-<p th:text="${hello}"></p>
-
-姓名：<span th:text="${user.name}"></span><br/>
-年龄：<span th:text="${user.age}"></span>
+<a href="/hello/index">测试Thymeleaf赋值问题</a>
 
 </body>
 </html>

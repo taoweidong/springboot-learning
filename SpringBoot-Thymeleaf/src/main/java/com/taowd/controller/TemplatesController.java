@@ -29,7 +29,7 @@ public class TemplatesController {
 
         map.put("user", user);
 
-        return "index";
+        return "test";
 
     }
 
