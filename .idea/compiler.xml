@@ -8,16 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBoot-FastJson" />
         <module name="springboot-fastJson" />
+        <module name="SpringBoot-GlobalDefaultExceptionHandler" />
         <module name="SpringBoot-HelloWorld" />
         <module name="SpringBoot-SpringDataJPA" />
-        <module name="SpringBoot-Swagger" />
         <module name="springboot-swagger" />
+        <module name="SpringBoot-Swagger" />
         <module name="SpringBoot-Thymeleaf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="SpringBoot-FastJson" target="1.8" />
       <module name="springboot-fastJson" target="1.8" />
+      <module name="SpringBoot-GlobalDefaultExceptionHandler" target="1.8" />
       <module name="SpringBoot-HelloWorld" target="1.8" />
       <module name="springboot-learning" target="1.8" />
       <module name="SpringBoot-SpringDataJPA" target="1.8" />
