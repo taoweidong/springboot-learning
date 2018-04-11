@@ -19,6 +19,8 @@
         <module>SpringBoot-SpringDataJPA</module>
         <!--全局异常捕获-->
         <module>SpringBoot-GlobalDefaultExceptionHandler</module>
+        <!--整合jdbcTemplate-->
+        <module>SpringBoot-jdbctemplate</module>
     </modules>
 
     <parent>
