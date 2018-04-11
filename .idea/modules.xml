@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringDataJPA/SpringBoot-SpringDataJPA.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringDataJPA/SpringBoot-SpringDataJPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Swagger/SpringBoot-Swagger.iml" filepath="$PROJECT_DIR$/SpringBoot-Swagger/SpringBoot-Swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Thymeleaf/SpringBoot-Thymeleaf.iml" filepath="$PROJECT_DIR$/SpringBoot-Thymeleaf/SpringBoot-Thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-jdbctemplate/SpringBoot-jdbctemplate.iml" filepath="$PROJECT_DIR$/SpringBoot-jdbctemplate/SpringBoot-jdbctemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-learning.iml" filepath="$PROJECT_DIR$/springboot-learning.iml" />
     </modules>
   </component>
