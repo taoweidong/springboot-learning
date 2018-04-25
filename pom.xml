@@ -21,6 +21,8 @@
         <module>SpringBoot-GlobalDefaultExceptionHandler</module>
         <!--整合jdbcTemplate-->
         <module>SpringBoot-jdbctemplate</module>
+        <!--整合mybatis-->
+        <module>SpringBoot-mybatis</module>
     </modules>
 
     <parent>
@@ -57,6 +59,13 @@
             <groupId>com.taowd</groupId>
             <artifactId>common-utils</artifactId>
             <version>1.0.0</version>
+        </dependency>
+
+        <!--工具类-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.3.2</version>
         </dependency>
 
     </dependencies>
