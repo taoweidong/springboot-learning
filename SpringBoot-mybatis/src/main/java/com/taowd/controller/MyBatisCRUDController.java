@@ -49,7 +49,7 @@ public class MyBatisCRUDController {
      * @return
      */
     @RequestMapping("/updataUser")
-    public JSONResult updataUser() {
+    public JSONResult updataUser() throws NullPointerException {
 
         SysUser sysUser = new SysUser();
         sysUser.setIdTest("1231");
@@ -57,7 +57,9 @@ public class MyBatisCRUDController {
 
         userService.updateUser(sysUser);
 
-        return JSONResult.ok(sysUser);
+        throw new NullPointerException();
+
+//        return JSONResult.ok(sysUser);
     }
 
     /**

@@ -17,7 +17,6 @@
 
 ## 创建学习工程：SpringBoot-mybatis
 
-![1524636585351](C:\Users\Taowd\AppData\Local\Temp\1524636585351.png)
 
 ## 添加依赖
 
@@ -145,9 +144,12 @@ public interface MyMapper<T> extends Mapper<T>, MySqlMapper<T> {
 
 ## 执行插件，生成代码
 
-![1524671729610](C:\Users\Taowd\AppData\Local\Temp\1524671729610.png)
+![](https://i.imgur.com/wRAlUQ2.png)
 
 ## 最终工程的代码结构
 
-![1524671787310](C:\Users\Taowd\AppData\Local\Temp\1524671787310.png)
+![](https://i.imgur.com/0by9hTq.png)
 
+
+
+源码地址：https://github.com/TaciturnK/springboot-learning
