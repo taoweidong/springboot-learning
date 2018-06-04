@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Redis/SpringBoot-Redis.iml" filepath="$PROJECT_DIR$/SpringBoot-Redis/SpringBoot-Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringDataJPA/SpringBoot-SpringDataJPA.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringDataJPA/SpringBoot-SpringDataJPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Swagger/SpringBoot-Swagger.iml" filepath="$PROJECT_DIR$/SpringBoot-Swagger/SpringBoot-Swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-Task/SpringBoot-Task.iml" filepath="$PROJECT_DIR$/SpringBoot-Task/SpringBoot-Task.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Thymeleaf/SpringBoot-Thymeleaf.iml" filepath="$PROJECT_DIR$/SpringBoot-Thymeleaf/SpringBoot-Thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-jdbctemplate/SpringBoot-jdbctemplate.iml" filepath="$PROJECT_DIR$/SpringBoot-jdbctemplate/SpringBoot-jdbctemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-mybatis/SpringBoot-mybatis.iml" filepath="$PROJECT_DIR$/SpringBoot-mybatis/SpringBoot-mybatis.iml" />

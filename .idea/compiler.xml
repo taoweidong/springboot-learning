@@ -16,6 +16,7 @@
         <module name="SpringBoot-SpringDataJPA" />
         <module name="springboot-swagger" />
         <module name="SpringBoot-Swagger" />
+        <module name="SpringBoot-Task" />
         <module name="SpringBoot-Thymeleaf" />
         <module name="SpringBoot-Thymeleaf (1)" />
       </profile>
@@ -32,6 +33,7 @@
       <module name="SpringBoot-SpringDataJPA" target="1.8" />
       <module name="SpringBoot-Swagger" target="1.8" />
       <module name="springboot-swagger" target="1.8" />
+      <module name="SpringBoot-Task" target="1.8" />
       <module name="SpringBoot-Thymeleaf" target="1.8" />
       <module name="SpringBoot-Thymeleaf (1)" target="1.8" />
       <module name="SpringBoot-Utils" target="1.8" />

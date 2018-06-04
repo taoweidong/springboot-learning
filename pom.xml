@@ -25,6 +25,8 @@
         <module>SpringBoot-mybatis</module>
         <!--整合Redis-->
         <module>SpringBoot-Redis</module>
+        <!--整合定时任务Task-->
+        <module>SpringBoot-Task</module>
     </modules>
 
     <parent>
