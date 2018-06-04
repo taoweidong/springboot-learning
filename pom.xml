@@ -23,6 +23,8 @@
         <module>SpringBoot-jdbctemplate</module>
         <!--整合mybatis-->
         <module>SpringBoot-mybatis</module>
+        <!--整合Redis-->
+        <module>SpringBoot-Redis</module>
     </modules>
 
     <parent>

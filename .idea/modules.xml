@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-FastJson/SpringBoot-FastJson.iml" filepath="$PROJECT_DIR$/SpringBoot-FastJson/SpringBoot-FastJson.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-GlobalDefaultExceptionHandler/SpringBoot-GlobalDefaultExceptionHandler.iml" filepath="$PROJECT_DIR$/SpringBoot-GlobalDefaultExceptionHandler/SpringBoot-GlobalDefaultExceptionHandler.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-HelloWorld/SpringBoot-HelloWorld.iml" filepath="$PROJECT_DIR$/SpringBoot-HelloWorld/SpringBoot-HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-Redis/SpringBoot-Redis.iml" filepath="$PROJECT_DIR$/SpringBoot-Redis/SpringBoot-Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-SpringDataJPA/SpringBoot-SpringDataJPA.iml" filepath="$PROJECT_DIR$/SpringBoot-SpringDataJPA/SpringBoot-SpringDataJPA.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Swagger/SpringBoot-Swagger.iml" filepath="$PROJECT_DIR$/SpringBoot-Swagger/SpringBoot-Swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Thymeleaf/SpringBoot-Thymeleaf.iml" filepath="$PROJECT_DIR$/SpringBoot-Thymeleaf/SpringBoot-Thymeleaf.iml" />

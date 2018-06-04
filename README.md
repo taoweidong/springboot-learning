@@ -64,8 +64,8 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 - SpringBoot-thymeleaf: 学习SpringBoot整合Thymleaf技术
 - SpringBoot-Exception: 学习SpringBoot异常处理功能
 - SpringBoot-Mybatis: 学习SpringBoot整合MyBatis
+- SpringBoot-Interceptor: 学习SpringBoot整合拦截器
+- SpringBoot-StudentManager: 完成SpringBoot的一个小项目
 - SpringBoot-Redis :学习SpringBoot整合Redis功能
 - SpringBoot-task: 学习SpringBoot整合定时任务功能
 - SpringBoot-AsyncTask: 学习SpringBoot整合异步任务功能
-- SpringBoot-Interceptor: 学习SpringBoot整合拦截器
-- SpringBoot-StudentManager: 完成SpringBoot的一个小项目

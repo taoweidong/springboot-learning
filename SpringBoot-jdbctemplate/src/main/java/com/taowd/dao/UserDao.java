@@ -29,6 +29,7 @@ public class UserDao {
 
         return jdbcTemplate.queryForObject(sql, rowMapper, id);
     }
+
     /**
      * 获取单个列的值或做统计查询
      * 使用 queryForObject(String sql, Class<Long> requiredType)
