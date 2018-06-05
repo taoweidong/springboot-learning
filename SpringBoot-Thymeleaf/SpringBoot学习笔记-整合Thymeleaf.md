@@ -109,7 +109,6 @@ Thymeleaf看起来像下面这样：
 2. #{home.welcome} 用来引入数据home对象中的 welcome属性。
 3. 可以用th:utext 用来显示“unescaped ” 的html内容。
 
-
 ----------
 
 - 编写访问模板文件controller
@@ -131,5 +130,10 @@ Thymeleaf看起来像下面这样：
 	        return "index";
 	    }
 	}
-	
-	
+
+## 增加自定义拦截器功能
+
+通过自定义拦截器，拦截用户请求
+
+![1528204443207](C:\Users\Taowd\AppData\Local\Temp\1528204443207.png)
+
