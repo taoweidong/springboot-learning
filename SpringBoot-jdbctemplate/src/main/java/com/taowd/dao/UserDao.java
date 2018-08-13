@@ -8,34 +8,37 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 /**
+ * 
+ * @ClassName: UserDao
+ * @Description: 用户操作
  * @author Taowd
- * @date 2018/4/11 - 20:03
- * @Description
+ * @date 2018年8月13日
+ *
  */
 @Repository
 public class UserDao {
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
 
-    /**
-     * 根据Id查询用户数据
-     *
-     * @param id
-     * @return
-     */
-    public User getUserById(long id) {
-        String sql = "select * from user where id=?";
-        RowMapper<User> rowMapper = new BeanPropertyRowMapper<User>(User.class);
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
 
-        return jdbcTemplate.queryForObject(sql, rowMapper, id);
-    }
+	/**
+	 * 根据Id查询用户数据
+	 *
+	 * @param id
+	 * @return
+	 */
+	public User getUserById(long id) {
+		String sql = "select * from user where id=?";
+		RowMapper<User> rowMapper = new BeanPropertyRowMapper<User>(User.class);
 
-    /**
-     * 获取单个列的值或做统计查询
-     * 使用 queryForObject(String sql, Class<Long> requiredType)
-     */
-    public long testQueryForObject2() {
-        String sql = "SELECT count(id) FROM user ";
-        return jdbcTemplate.queryForObject(sql, Long.class);
-    }
+		return jdbcTemplate.queryForObject(sql, rowMapper, id);
+	}
+
+	/**
+	 * 获取单个列的值或做统计查询 使用 queryForObject(String sql, Class<Long> requiredType)
+	 */
+	public long testQueryForObject2() {
+		String sql = "SELECT count(id) FROM user ";
+		return jdbcTemplate.queryForObject(sql, Long.class);
+	}
 }

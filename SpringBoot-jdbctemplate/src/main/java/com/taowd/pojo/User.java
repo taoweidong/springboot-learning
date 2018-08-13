@@ -20,19 +20,19 @@ import javax.persistence.Id;
 @Entity
 public class User {
 
-    /**
-     * ID 唯一标识
-     */
-    @Id
-    //指定主键的生成策略，MySql默认是自增长
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-    /**
-     * 用户名
-     */
-    private String name;
-    /**
-     * 年龄
-     */
-    private int age;
+	/**
+	 * ID 唯一标识
+	 */
+	@Id
+	// 指定主键的生成策略，MySql默认是自增长
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	/**
+	 * 用户名
+	 */
+	private String name;
+	/**
+	 * 年龄
+	 */
+	private int age;
 }

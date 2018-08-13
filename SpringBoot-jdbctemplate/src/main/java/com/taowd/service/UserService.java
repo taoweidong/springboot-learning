@@ -14,25 +14,25 @@ import javax.annotation.Resource;
 @Service
 public class UserService {
 
-    @Resource
-    private UserDao userDao;
+	@Resource
+	private UserDao userDao;
 
-    /**
-     * 根据Id查询单个用户
-     *
-     * @param id
-     * @return
-     */
-    public User getUserById(long id) {
-        return userDao.getUserById(id);
-    }
+	/**
+	 * 根据Id查询单个用户
+	 *
+	 * @param id
+	 * @return
+	 */
+	public User getUserById(long id) {
+		return userDao.getUserById(id);
+	}
 
-    /**
-     * 查询用户总数
-     *
-     * @return
-     */
-    public long getCount() {
-        return userDao.testQueryForObject2();
-    }
+	/**
+	 * 查询用户总数
+	 *
+	 * @return
+	 */
+	public long getCount() {
+		return userDao.testQueryForObject2();
+	}
 }

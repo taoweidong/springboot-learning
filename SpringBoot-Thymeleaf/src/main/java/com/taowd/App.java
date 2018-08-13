@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class App {
 
-    private static final Logger logger = LoggerFactory.getLogger(App.class);
+	private static final Logger logger = LoggerFactory.getLogger(App.class);
 
-    @RequestMapping("/")
-    public String index() {
-        return "index";
-    }
+	@RequestMapping("/")
+	public String index() {
+		return "index";
+	}
 
-    public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+	public static void main(String[] args) {
+		SpringApplication.run(App.class, args);
 
-        logger.info("服务启动成功------>");
-    }
+		logger.info("服务启动成功------>");
+	}
 }

@@ -18,24 +18,25 @@ import java.util.List;
 @Configuration
 public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new OneInterceptor()).addPathPatterns("/**");
-        registry.addInterceptor(new TwoInterceptor()).addPathPatterns("/**");
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		registry.addInterceptor(new OneInterceptor()).addPathPatterns("/**");
+		registry.addInterceptor(new TwoInterceptor()).addPathPatterns("/**");
 
-        super.addInterceptors(registry);
-    }
+		super.addInterceptors(registry);
+	}
 
-    @Override
-    public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
-        exceptionResolvers.add(new HandlerExceptionResolver() {
-            @Override
-            public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
+	@Override
+	public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
+		exceptionResolvers.add(new HandlerExceptionResolver() {
+			@Override
+			public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response,
+					Object handler, Exception ex) {
 
 //                Result result = new Result();
 
-                return new ModelAndView();
-            }
-        });
-    }
+				return new ModelAndView();
+			}
+		});
+	}
 }

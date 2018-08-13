@@ -8,21 +8,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
 
+/**
+ * 
+ * @ClassName: App
+ * @Description: TODO(这里用一句话描述这个类的作用)
+ * @author Taowd
+ * @date 2018年8月13日
+ *
+ */
 @SpringBootApplication
 @Controller
 public class App {
 
-    @Resource
-    private JdbcTemplate jdbcTemplate;
+	@Resource
+	private JdbcTemplate jdbcTemplate;
 
-    @RequestMapping("/")
-    public String index() {
-        return "index";
-    }
+	@RequestMapping("/")
+	public String index() {
+		return "index";
+	}
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        SpringApplication.run(App.class, args);
+		SpringApplication.run(App.class, args);
 
-    }
+	}
 }
