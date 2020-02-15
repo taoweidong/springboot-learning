@@ -5,3 +5,5 @@
 .project
 /logs/
 .iml
+# gitignore忽略子目录下所有某后缀的文件
+**/*.iml

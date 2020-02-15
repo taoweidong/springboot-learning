@@ -15,23 +15,23 @@ import java.util.Date;
 @RestController
 public class UserController {
 
-    @GetMapping("/getUser")
-    public User getUser() {
-        User user = new User();
-        user.setId(10L);
-        user.setName("李三");
-        user.setBirthday(new Date());
+  @GetMapping("/getUser")
+  public User getUser() {
+    User user = new User();
+    user.setId(10L);
+    user.setName("李三");
+    user.setBirthday(new Date());
 
-        return user;
-    }
+    return user;
+  }
 
-    @GetMapping("/getJsonUser")
-    public JSONResult getJsonUser() {
-        User user = new User();
-        user.setId(10L);
-        user.setName("李三");
-        user.setBirthday(new Date());
+  @GetMapping("/getJsonUser")
+  public JSONResult getJsonUser() {
+    User user = new User();
+    user.setId(10L);
+    user.setName("李三");
+    user.setBirthday(new Date());
 
-        return JSONResult.ok(user);
-    }
+    return JSONResult.ok(user);
+  }
 }

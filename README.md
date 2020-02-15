@@ -67,5 +67,6 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 - SpringBoot-Interceptor: 学习SpringBoot整合拦截器
 - SpringBoot-StudentManager: 完成SpringBoot的一个小项目
 - SpringBoot-Redis :学习SpringBoot整合Redis功能
-- SpringBoot-task: 学习SpringBoot整合定时任务功能
-- SpringBoot-AsyncTask: 学习SpringBoot整合异步任务功能
+- SpringBoot-task: 学习SpringBoot整合定时任务功能   -- 待完善
+- SpringBoot-AsyncTask: 学习SpringBoot整合异步任务功能 -- 待完善
+- commmon-utils：工具类组件，提供给当前所有项目使用，同时作为工具类的整理

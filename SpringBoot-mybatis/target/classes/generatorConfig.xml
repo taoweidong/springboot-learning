@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="MysqlContext" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <!-- 为了防止生成的代码中有很多注释，比较难看，加入下面的配置控制 -->
+        <!--   <property name="suppressAllComments" value="true"/>
+           <property name="suppressDate" value="true"/>-->
+
+        <!--继承自己的MyMapper，内含基本的方法-->
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="generate.MyMapper"/>
+        </plugin>
+
+        <!--数据库配置文件-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/test"
+                        userId="root"
+                        password="root">
+        </jdbcConnection>
+
+        <!-- 对于生成的pojo所在包 -->
+        <javaModelGenerator targetPackage="com.taowd.pojo" targetProject="src/main/java"/>
+
+        <!-- 对于生成的mapper所在目录 -->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
+
+        <!-- 配置mapper对应的java映射接口的位置 -->
+        <javaClientGenerator targetPackage="com.taowd.mapper" targetProject="src/main/java"
+                             type="XMLMAPPER"/>
+
+        <!--需要生成pojo的数据表-->
+        <table tableName="user"></table>
+        <table tableName="sys_user"></table>
+
+    </context>
+</generatorConfiguration>
