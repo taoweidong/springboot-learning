@@ -10,3 +10,10 @@
 - 访问：[http://127.0.0.1:8090/getUser](http://127.0.0.1:8090/getUser)
 
 ![](https://i.imgur.com/Bojo9RN.png)
+
+# 2020年2月15日
+以下注解的学习
+- @ConfigurationProperties(prefix = "person")
+- @PropertySource(value = {"classpath:person.properties"})
+- @Configuration
+- @ImportResource(value = {"classpath:beans.xml"})
