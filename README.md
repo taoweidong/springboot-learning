@@ -31,6 +31,18 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 
 - 引入许多自己不需要的jar包，导致项目臃肿
 
+# Spring Cloud 概述
+
+SpringCloud是基于SpringBoot的一整套实现微服务的框架。他提供了微服务开发所需的配置管理、服务发现、断路器、智能路由、微代理、控制总线、全局锁、决策竞选、分布式会话和集群状态管理等组件。最重要的是跟Spring Boot框架一起使用的话，会让你开发微服务架构的云服务非常好的方便。
+
+# Spring Boot与Spring Cloud关系
+
+Spring boot 是 Spring 的一套快速配置脚手架，可以基于Spring Boot 快速开发单个微服务，Spring Cloud是一个基于Spring Boot实现的云应用开发工具；Spring boot专注于快速、方便集成的单个个体，Spring Cloud是关注全局的服务治理框架；Spring Boot使用了默认大于配置的理念，很多集成方案已经帮你选择好了，能不配置就不配置，Spring Cloud很大的一部分是基于Spring Boot来实现。
+Spring boot可以离开Spring Cloud独立使用开发项目，但是Spring Cloud离不开Spring Boot，属于依赖的关系。
+
+    spring -> spring boot > spring cloud 这样的关系。
+
+
 
 # 前提条件
 
@@ -70,3 +82,9 @@ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来�
 - SpringBoot-task: 学习SpringBoot整合定时任务功能   -- 待完善
 - SpringBoot-AsyncTask: 学习SpringBoot整合异步任务功能 -- 待完善
 - commmon-utils：工具类组件，提供给当前所有项目使用，同时作为工具类的整理
+
+# 参考资料
+- 优质GitHub项目：https://github.com/smltq/spring-boot-demo
+    - 码云仓库：https://gitee.com/tqlin/spring-boot-demo.git
+    - GitHub仓库：https://github.com/smltq/spring-boot-demo.git
+
