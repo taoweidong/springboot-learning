@@ -82,6 +82,7 @@ Spring boot可以离开Spring Cloud独立使用开发项目，但是Spring Cloud
 - SpringBoot-task: 学习SpringBoot整合定时任务功能   -- 待完善
 - SpringBoot-AsyncTask: 学习SpringBoot整合异步任务功能 -- 待完善
 - commmon-utils：工具类组件，提供给当前所有项目使用，同时作为工具类的整理
+- SpringBoot-config：SpringBoot配置文件加载顺序测试
 
 # 参考资料
 - 优质GitHub项目：https://github.com/smltq/spring-boot-demo
