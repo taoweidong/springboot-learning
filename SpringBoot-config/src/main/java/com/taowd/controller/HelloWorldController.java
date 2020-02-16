@@ -14,7 +14,13 @@ public class HelloWorldController {
 
   @GetMapping("/")
   public String hello() {
-    return "Hello World SpringBoot person---->";
+    return "Hello World SpringBoot person---->SpringBoot-config";
+  }
+
+
+  @GetMapping("/myServlet")
+  public String myServlet() {
+    return "Hello World SpringBoot person---->myServlet";
   }
 
 
