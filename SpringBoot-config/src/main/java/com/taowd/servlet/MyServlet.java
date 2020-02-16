@@ -16,14 +16,14 @@ public class MyServlet extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-    System.out.println("接收到请求-------->doGet");
+    System.out.println("Servlet接收到请求-------->doGet");
     this.doPost(req, resp);
   }
 
   @Override
   protected void doPost(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
-    System.out.println("接收到请求-------->doPost");
+    System.out.println("Servlet接收到请求-------->doPost");
     resp.getWriter().write("Hello this is myServlet");
   }
 }
