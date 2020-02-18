@@ -16,6 +16,9 @@
     <!--工具类 -->
     <module>commmon-utils</module>
     <!--其他服务-->
+    <module>Learning-spring-boot-starter-test</module>
+    <module>Learning-spring-boot-starter</module>
+    <module>Learning-spring-boot-starter-autoconfigurer</module>
     <module>SpringBoot-HelloWorld</module>
     <module>SpringBoot-EventListener</module>
     <module>SpringBoot-config</module>
@@ -64,13 +67,6 @@
       <scope>test</scope>
     </dependency>
 
-    <!--自己封装的工具工程 -->
-    <dependency>
-      <groupId>com.taowd</groupId>
-      <artifactId>commmon-utils</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-    </dependency>
-
     <!--工具类 -->
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -79,15 +75,6 @@
     </dependency>
 
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 
 
 </project>
