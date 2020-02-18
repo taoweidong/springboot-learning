@@ -24,6 +24,14 @@
       <artifactId>spring-boot-starter</artifactId>
     </dependency>
 
+    <!--    用于支持在配置文件中配置属性时的提示功能-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+
   </dependencies>
 
 
