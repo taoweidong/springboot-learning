@@ -17,6 +17,7 @@
     <module>commmon-utils</module>
     <!--其他服务-->
     <module>SpringBoot-HelloWorld</module>
+    <module>SpringBoot-EventListener</module>
     <module>SpringBoot-config</module>
     <module>SpringBoot-FastJson</module>
     <module>SpringBoot-Thymeleaf</module>
