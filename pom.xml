@@ -16,9 +16,9 @@
     <!--工具类 -->
     <module>commmon-utils</module>
     <!--其他服务-->
-    <module>Learning-spring-boot-starter-test</module>
-    <module>Learning-spring-boot-starter</module>
-    <module>Learning-spring-boot-starter-autoconfigurer</module>
+    <module>SpringBoot-Starter/Learning-spring-boot-starter-test</module>
+    <module>SpringBoot-Starter/Learning-spring-boot-starter</module>
+    <module>SpringBoot-Starter/Learning-spring-boot-starter-autoconfigurer</module>
     <module>SpringBoot-HelloWorld</module>
     <module>SpringBoot-EventListener</module>
     <module>SpringBoot-config</module>

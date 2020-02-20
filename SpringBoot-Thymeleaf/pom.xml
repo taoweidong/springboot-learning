@@ -1,82 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
+  <groupId>com.taowd</groupId>
+  <artifactId>SpringBoot-Thymeleaf</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>SpringBoot-Thymeleaf</name>
+  <description>Spring Boot整合Thymeleaf模板引擎</description>
+
+  <parent>
     <groupId>com.taowd</groupId>
-    <artifactId>SpringBoot-Thymeleaf</artifactId>
+    <artifactId>springboot-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+  </parent>
 
-    <name>SpringBoot-Thymeleaf</name>
-    <description>Spring Boot整合Thymeleaf模板引擎</description>
+  <dependencies>
 
-    <parent>
-        <groupId>com.taowd</groupId>
-        <artifactId>springboot-learning</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
-
-    <dependencies>
-
-        <!-- 热部署 -->
-        <!-- devtools可以实现页面热部署（即页面修改后会立即生效，
-            这个可以直接在application.properties文件中配置spring.thymeleaf.cache=false来实现） -->
-        <!-- 实现类文件热部署（类文件修改后不会立即生效），实现对属性文件的热部署。 -->
-        <!-- 即devtools会监听classpath下的文件变动，并且会立即重启应用（发生在保存时机），
-            注意：因为其采用的虚拟机机制，该项重启是很快的 -->
-        <!-- （1）base classloader （Base类加载器）：加载不改变的Class，例如：第三方提供的jar包。 -->
-        <!-- （2）restart classloader（Restart类加载器）：加载正在开发的Class。 -->
-        <!-- 为什么重启很快，因为重启的时候只是加载了在开发的Class，没有重新加载第三方的jar包。 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <!-- optional=true, 依赖不会传递, 该项目依赖devtools;
-                之后依赖boot项目的项目如果想要使用devtools, 需要重新引入 -->
-            <optional>true</optional>
-        </dependency>
+    <!-- 热部署 -->
+    <!-- devtools可以实现页面热部署（即页面修改后会立即生效，
+        这个可以直接在application.properties文件中配置spring.thymeleaf.cache=false来实现） -->
+    <!-- 实现类文件热部署（类文件修改后不会立即生效），实现对属性文件的热部署。 -->
+    <!-- 即devtools会监听classpath下的文件变动，并且会立即重启应用（发生在保存时机），
+        注意：因为其采用的虚拟机机制，该项重启是很快的 -->
+    <!-- （1）base classloader （Base类加载器）：加载不改变的Class，例如：第三方提供的jar包。 -->
+    <!-- （2）restart classloader（Restart类加载器）：加载正在开发的Class。 -->
+    <!-- 为什么重启很快，因为重启的时候只是加载了在开发的Class，没有重新加载第三方的jar包。 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+      <!-- optional=true, 依赖不会传递, 该项目依赖devtools;
+          之后依赖boot项目的项目如果想要使用devtools, 需要重新引入 -->
+      <optional>true</optional>
+    </dependency>
 
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
 
 
-    </dependencies>
+  </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <!--跳过测试的插件-->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
-                <configuration>
-                    <skipTests>true</skipTests>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>docker-maven-plugin</artifactId>
-                <configuration>
-                    <imageName>${project.name}:${project.version}</imageName>
-                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
-                    <skipDockerBuild>false</skipDockerBuild>
-                    <resources>
-                        <resource>
-                            <directory>${project.build.directory}</directory>
-                            <include>${project.build.finalName}.jar</include>
-                        </resource>
-                    </resources>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+      <!--跳过测试的插件-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+        <configuration>
+          <skipTests>true</skipTests>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.spotify</groupId>
+        <artifactId>docker-maven-plugin</artifactId>
+        <configuration>
+          <imageName>${project.name}:${project.version}</imageName>
+          <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+          <skipDockerBuild>false</skipDockerBuild>
+          <resources>
+            <resource>
+              <directory>${project.build.directory}</directory>
+              <include>${project.build.finalName}.jar</include>
+            </resource>
+          </resources>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 
 </project>
